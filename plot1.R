@@ -1,5 +1,5 @@
 mydata <- read.csv("C:/Users/spowe_000/Desktop/household_power_consumption.txt",sep=';')
-new_data <- subset(mydata, mydata$Date == "2/1/2007"| mydata$Date == "2/2/2007")
+new_data <- subset(mydata, mydata$Date == "1/2/2007"| mydata$Date == "2/2/2007")
 
 png("plot1.png", width=480, height=480)
 hist(as.numeric(as.character(new_data$Global_active_power)), main="Global Active Power",

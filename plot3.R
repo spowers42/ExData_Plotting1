@@ -1,5 +1,5 @@
 mydata <- read.csv("C:/Users/spowe_000/Desktop/household_power_consumption.txt",sep=';')
-new_data <- subset(mydata, mydata$Date == "2/1/2007"| mydata$Date == "2/2/2007")
+new_data <- subset(mydata, mydata$Date == "1/2/2007"| mydata$Date == "2/2/2007")
 
 png("plot3.png", width=480, height=480)
 plot(c(1,2880), c(0,40), type="n", ylab="energy sub metering", xaxt='n', xlab="")
